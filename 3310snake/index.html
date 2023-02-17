@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3310snake</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color: #1c1c1c;
+        }
+        button
+        {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: forestgreen;
+        }
+        .field
+        {
+            width: 205px;
+            height: 205px;
+            display: flex;
+            flex-wrap: wrap;
+            border-style: solid;
+        }
+        
+        .field div
+        {
+            width: 10px;
+            height: 10px;
+        }
+        
+        .snake
+        {
+            background-color: rgb(101, 237, 101);
+        }
+        
+        .apple
+        {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="score">SCORE:<span>0</span></h2>
+    <div class="field"></div>
+    <button class="start">START</button>
+
+    <script src="./game.js"></script>
+</body>
+</html>
