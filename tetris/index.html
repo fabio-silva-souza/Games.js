@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+            background-color: #1c1c1c;
+        }
+        button
+        {
+            margin: 20px;
+        }
+        .game
+        {
+            display: flex;
+            width: 350px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .field
+        {
+            width: 200px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            /* background-color: dodgerblue; */
+        }
+
+        .field div
+        {
+            height: 20px;
+            width: 20px;
+            border: 1px solid rgb(0, 128, 255);
+            /* background-color: red; */
+        }
+        .mini-field
+        {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color: aqua; */
+        }
+        .mini-field div
+        {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+        }
+        .block
+        {
+            background-color: darkmagenta;
+            border: 2px solid #fff !important;
+        }
+        .floor
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <h3 class="score-display">SCORE:<span>0</span></h3>
+    <h1 class="lines-display"></h1>
+
+    <div class="previous-shape"></div>
+    
+    <div class="game">
+      <div class="field"></div>
+      <div class="mini-field"></div>
+    </div>
+    
+    <button>Start</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
